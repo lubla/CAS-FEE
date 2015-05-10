@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <link href="css/layout.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="page">
+
+      <!-- Header -->
+        <header class="padded">
+          Header
+        </header>
+
+      <!-- 3 Columns Nav/Content/Sidebar-->
+
+        <div>
+
+          <!-- ??? A child div with padding added to all columns because the columns are too wide when
+               adding the padding to the parent elements nav/div/aside. -->
+
+            <nav class="column" id="navigation">
+                <div class="padded">
+                Nav
+                </div>
+            </nav>
+            <div class="column" id="content">
+                <div class="padded">
+                Content<br>Blabla
+                </div>
+            </div>
+            <aside class="column" id="sidebar">
+                <div class="padded">
+                Sidebar
+                </div>
+            </aside>
+        </div>
+
+      <!-- Footer -->
+
+        <footer class="padded">
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
