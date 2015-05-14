@@ -7,10 +7,24 @@ header, footer {
     background: yellow;
 }
 
-
-
 .padded {
-    padding: 0.5em;
+    /*padding: 0.5em;*/
+}
+
+.fill {
+    margin-bottom: -1000em;
+    padding-bottom: 1001em;
+}
+
+#row:after{
+    clear : both;
+    display: block;
+    content: "";
+
+}
+
+#row {
+    overflow: hidden;
 }
 
 #navigation{
@@ -31,9 +45,9 @@ header, footer {
 
 .column {
     float: left;
-    min-height: 300px;
+    /*min-height: 300px;*/
 }
 
 footer {
-    clear:left  /* ?? Footer has no top padding without this. */
+    /*clear:left  /!* ?? Footer has no top padding without this. *!/*/
 }
