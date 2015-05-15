@@ -41,8 +41,41 @@ h3 {
 }
 
 
-div {
+.summary, .preamble, .main, .participation, .benefits, .requirements {
 
   border-bottom: solid 1px gray;
 
+}
+li:first-child {
+  border-top: solid 2px;
+  border-color: gray;
+}
+
+li {
+  list-style-image: url("../pictures/NoTriangle.png");
+  border-bottom: solid 2px;
+  border-color: gray;
+  /*margin:0px;*/
+  /*padding:0px;*/
+}
+
+li:hover {
+  list-style-image: url("../pictures/Triangle.png");
+}
+
+ul {
+  /*padding-left: 8px;*/
+  list-style-position: inside;
+  /*margin:0px;*/
+  padding:0px;
+
+  /*left: -30px;*/
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+
+  color: orange;
 }
