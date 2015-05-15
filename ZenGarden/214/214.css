@@ -1,0 +1,48 @@
+body {
+  width: 959px;
+  font-family: sans-serif;
+}
+
+.intro:before {
+
+  background:
+  url("../pictures/logo.gif") 10px 0px no-repeat,
+  url(../pictures/Header_Bibliothek.jpg) 0px 0px no-repeat;  /* On top,    like z-index: 4; */
+  /*background: url("../pictures/logo.gif");*/
+  /*background-repeat: no-repeat;*/
+  display: block;
+  content: "";
+  height: 195px;
+}
+
+h1 {
+  background-color: blue;
+  padding: 5px 0px 5px 0px;
+  color: white;
+}
+
+header {
+  /*background-image: url("../pictures/Header_Bibliothek.jpg");*/
+  /*background-repeat: no-repeat;*/
+  text-align: center;
+  /*position: fixed;*/
+  /*top: 100px;*/
+  /*line-height: 100px;*/
+  /*vertical-align: middle;*/
+
+  padding-bottom: 5px;
+  /*display: inline;*/
+
+  border-bottom: solid 3px;
+}
+
+h3 {
+  color: blue;
+}
+
+
+div {
+
+  border-bottom: solid 1px gray;
+
+}
