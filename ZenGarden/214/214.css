@@ -1,27 +1,35 @@
+html {
+  background: cornflowerblue;
+  font-size: 75%;
+}
+
 body {
+  background: white;
   width: 959px;
   font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro:before {
-
   background:
-    url("../pictures/logo.gif") 10px 0px no-repeat,
-    url(../pictures/Header_Bibliothek.jpg) 0px 0px no-repeat;  /* On top,    like z-index: 4; */
+    url("../pictures/logo.gif") 10px 0px no-repeat,            /* HSR logo on top             */
+    url(../pictures/Header_Bibliothek.jpg) 0px 0px no-repeat;  /*  */
   display: block;
   content: "";
   height: 195px;
 }
 
-.main  {
-  position: absolute;
-  left: 330px;
+.summary, .preamble, .main  {
+  margin-left: 330px;
   width: 629px;
 
 }
 
 .sidebar {
   width: 315px;
+  position: absolute;
+  top: 350px;
 }
 
 h1 {
@@ -42,7 +50,7 @@ header {
   padding-bottom: 5px;
   /*display: inline;*/
 
-  border-bottom: solid 3px;
+  border-bottom: solid 3px;  /* Thick black line after header. */
 }
 
 h3 {
@@ -50,10 +58,8 @@ h3 {
 }
 
 
-.summary, .preamble, .main, .participation, .benefits, .requirements {
-
+.summary, .preamble, .participation, .benefits {
   border-bottom: solid 1px gray;
-
 }
 
 li:first-child {
@@ -65,6 +71,7 @@ li {
   list-style-image: url("../pictures/NoTriangle.png");
   border-bottom: solid 2px;
   border-color: gray;
+  padding: 0px;
 
 }
 
@@ -83,4 +90,31 @@ a:link {
 }
 a:hover {
   color: orange;
+}
+
+
+footer {
+  border-top: solid 3px gray; /* Thick gray line before footer. */
+  margin-left: -330px;   /* Move footer to the left side (aligned with nav) */
+  margin-top: 20px;
+  text-align: right;
+  padding: 20px 0px 10px 0px;
+}
+
+footer a:link {
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+footer:before {
+  display: block;
+  content: "HSR Hochschule fuer Technik Rapperswil, Oberseestrasse 10, Postfach 1475, CH-8640 Rapperswil";
+  float: left;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+footer a:link:not(:last-child), footer a:link:not(:last-child):visited {
+  border-right:2px solid black;  /* Bars between footer links */
 }
