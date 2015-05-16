@@ -6,13 +6,22 @@ body {
 .intro:before {
 
   background:
-  url("../pictures/logo.gif") 10px 0px no-repeat,
-  url(../pictures/Header_Bibliothek.jpg) 0px 0px no-repeat;  /* On top,    like z-index: 4; */
-  /*background: url("../pictures/logo.gif");*/
-  /*background-repeat: no-repeat;*/
+    url("../pictures/logo.gif") 10px 0px no-repeat,
+    url(../pictures/Header_Bibliothek.jpg) 0px 0px no-repeat;  /* On top,    like z-index: 4; */
   display: block;
   content: "";
   height: 195px;
+}
+
+.main  {
+  position: absolute;
+  left: 330px;
+  width: 629px;
+
+}
+
+.sidebar {
+  width: 315px;
 }
 
 h1 {
@@ -46,6 +55,7 @@ h3 {
   border-bottom: solid 1px gray;
 
 }
+
 li:first-child {
   border-top: solid 2px;
   border-color: gray;
@@ -55,8 +65,7 @@ li {
   list-style-image: url("../pictures/NoTriangle.png");
   border-bottom: solid 2px;
   border-color: gray;
-  /*margin:0px;*/
-  /*padding:0px;*/
+
 }
 
 li:hover {
@@ -64,18 +73,14 @@ li:hover {
 }
 
 ul {
-  /*padding-left: 8px;*/
   list-style-position: inside;
-  /*margin:0px;*/
   padding:0px;
 
-  /*left: -30px;*/
 }
 
 a:link {
   text-decoration: none;
 }
 a:hover {
-
   color: orange;
 }
