@@ -1,17 +1,14 @@
 html {
-  background-color: rgb(204, 220, 233);
+  background-color: rgb(204, 220, 233);  /* Blue of the area that is not filled with the page */
   font-size: 85%;
 }
-
-
-
 
 body {
   background: white;
   width: 959px;
   font-family: sans-serif;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto;  /* To display the html blue on the left side */
+  margin-right: auto; /* To display the html blue on the right side */
 }
 
 .intro:before {
@@ -20,17 +17,16 @@ body {
     url(../pictures/Header_Bibliothek.jpg) 0px 0px no-repeat;  /*  */
   display: block;
   content: "";
-  height: 195px;
+  height: 195px; /* The height of the bibliothek jpg */
 }
 
 .summary, .preamble, .main  {
-  margin-left: 330px;
-  width: 429px;
-
+  margin-left: 290px;  /* Space for the sidebar */
+  width: 470px;
 }
 
 .sidebar {
-  width: 315px;
+  width: 280px;
   position: absolute;
   top: 350px;
 }
@@ -92,7 +88,7 @@ a {
 
 footer {
   border-top: solid 3px gray; /* Thick gray line before footer. */
-  margin-left: -330px;   /* Move footer to the left side (aligned with nav) */
+  margin-left: -290px;   /* Move footer to the left side (aligned with nav) */
   margin-right: -200px;
   margin-top: 20px;
   text-align: right;
@@ -118,7 +114,6 @@ footer a:link:not(:last-child), footer a:link:not(:last-child):visited {
 }
 
 .zen-resources {
-
   position: absolute;
   left: 770px;
   width: 180px;
