@@ -1,6 +1,6 @@
 html {
-  background: cornflowerblue;
-  font-size: 75%;
+  background-color: rgb(204, 220, 233);
+  font-size: 85%;
 }
 
 
@@ -25,7 +25,7 @@ body {
 
 .summary, .preamble, .main  {
   margin-left: 330px;
-  width: 629px;
+  width: 429px;
 
 }
 
@@ -36,28 +36,19 @@ body {
 }
 
 h1 {
-  background-color: blue;
+  background-color: rgb(0, 80, 146);
   padding: 5px 0px 5px 0px;
   color: white;
 }
 
 header {
-  /*background-image: url("../pictures/Header_Bibliothek.jpg");*/
-  /*background-repeat: no-repeat;*/
   text-align: center;
-  /*position: fixed;*/
-  /*top: 100px;*/
-  /*line-height: 100px;*/
-  /*vertical-align: middle;*/
-
   padding-bottom: 5px;
-  /*display: inline;*/
-
   border-bottom: solid 3px;  /* Thick black line after header. */
 }
 
 h3 {
-  color: blue;
+  color: rgb(0, 80, 146);
 }
 
 
@@ -74,12 +65,12 @@ li {
   list-style-image: url("../pictures/NoTriangle.png");
   border-bottom: solid 2px;
   border-color: gray;
-  padding: 0px;
+  padding: 2px 0px 2px 0px;
 
 }
 
 li:hover {
-  list-style-image: url("../pictures/Triangle.png");
+  list-style-image: url("../pictures/OrangeTriangle.png");
 }
 
 ul {
@@ -95,10 +86,14 @@ a:hover {
   color: orange;
 }
 
+a {
+  color : rgb(0, 80, 146);
+}
 
 footer {
   border-top: solid 3px gray; /* Thick gray line before footer. */
   margin-left: -330px;   /* Move footer to the left side (aligned with nav) */
+  margin-right: -200px;
   margin-top: 20px;
   text-align: right;
   padding: 20px 0px 10px 0px;
@@ -121,3 +116,38 @@ footer:before {
 footer a:link:not(:last-child), footer a:link:not(:last-child):visited {
   border-right:2px solid black;  /* Bars between footer links */
 }
+
+.zen-resources {
+
+  position: absolute;
+  left: 770px;
+  width: 180px;
+  top: 0px;
+}
+
+.zen-resources li {
+
+  list-style: none;
+  background: url("../pictures/BlueTriangle.png") no-repeat right;
+  background-color: rgb(178, 202, 222);
+  font-weight: bold;
+  font-size: larger;
+  border-width: 0px;
+  padding: 5px 0px 7px 0px;
+  margin: 5px 0px 5px 0px;
+  direction: rtl;
+  list-style-position: outside;
+  text-align: left;
+
+  background-color: rgb(178, 202, 222);
+}
+
+.zen-resources li:hover {
+  background: url("../pictures/OrangeTriangle.png") no-repeat right;
+  background-color: rgb(178, 202, 222);
+}
+
+.zen-resources a:hover, .zen-resources a {
+  color: black;
+}
+
