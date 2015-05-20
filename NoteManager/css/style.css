@@ -1,6 +1,7 @@
 body {
-  width: 800px;
-  height: 370px;
+  width: auto;
+  /*height: 370px;*/
+  height: auto;
   border: solid thin black;
 }
 
@@ -9,15 +10,17 @@ div {
   padding: 5px;
 }
 
-.label1 {
+.label {
   width: 100px;
+  /*width: 8%;*/
   text-align: left;
   float: left;
   font-weight: bold;
 }
 
 .textField {
-  width: 670px;
+  /*width: 670px;*/
+  width: 90%;
 }
 
 .dateField {
@@ -28,7 +31,11 @@ div {
   height: 200px;
 }
 
+/*commands position: bottom right*/
 .commands {
+  position: relative;
+  bottom: 30px;
+  right: 10px;
 }
 
 button {
